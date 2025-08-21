@@ -2,51 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book a Service | Urban Auto</title>
+  <title>Book a Service | Urban Auto Hub</title>
 </head>
 <body>
   <header>
     <h1>Book Your Appointment</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
+      <a href="ev-education.html">EV Education</a>
       <a href="blog.html">Blog</a>
+      <a href="reviews.html">Reviews</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
     <form>
-      <label for="location">Choose Location:</label>
+      <label for="service">Service Type:</label>
+      <input type="text" id="service" placeholder="e.g. Detailing">
+
+      <label for="location">Location:</label>
       <select id="location">
-        <option>Braamfontein</option>
         <option>Sandton</option>
-        <option>Midrand</option>
         <option>Rosebank</option>
-        <option>Randburg</option>
-        <option>Fourways</option>
+        <option>Midrand</option>
         <option>Johannesburg CBD</option>
         <option>Pretoria</option>
-        <option>Centurion</option>
-        <option>Benoni</option>
+        <option>Cape Town</option>
+        <option>Durban</option>
+        
       </select>
 
-      <label for="service">Service Type:</label>
-      <input type="text" id="service" placeholder="e.g. Oil Change">
-
-      <label for="date">Preferred Date:</label>
+      <label for="date">Date:</label>
       <input type="date" id="date">
 
-      <label for="time">Preferred Time:</label>
+      <label for="time">Time:</label>
       <input type="time" id="time">
 
-      <button type="submit">Book Now</button>
+      <button type="submit">Confirm Booking</button>
     </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 Urban Auto</p>
+    <p>&copy; 2025 Urban Auto Hub</p>
   </footer>
 </body>
 </html>
