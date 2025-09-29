@@ -1,0 +1,154 @@
+/* General page styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem; /* Use relative units */
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1.25rem; /* rem instead of px */
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.75rem;
+}
+
+nav a {
+  color: #ffcc00;
+  margin: 0 1rem; /* relative spacing */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; /* responsive spacing */
+}
+
+form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  width: 100%;
+  background: #ffcc00;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e6b800;
+}
+
+/* Images */
+img {
+  max-width: 100%; /* Responsive images */
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* -----------------------
+   Responsive Breakpoints
+--------------------------*/
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  nav a {
+    margin: 0 0.5rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  form {
+    padding: 1.25rem;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

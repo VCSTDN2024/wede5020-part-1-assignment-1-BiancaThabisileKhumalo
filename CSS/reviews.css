@@ -1,0 +1,138 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem 10%;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0.8rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4c542;
+}
+
+/* Main */
+main {
+  padding: 2.5rem 10%;
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+  color: #0077cc;
+  font-size: 1.75rem;
+}
+
+/* Reviews Layout */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Review Cards */
+blockquote {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  font-style: italic;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+blockquote p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+blockquote cite {
+  display: block;
+  font-weight: bold;
+  color: #0077cc;
+  font-style: normal;
+  margin-top: 0.5rem;
+}
+
+/* Quotation Marks Styling */
+blockquote::before {
+  content: "“";
+  font-size: 2rem;
+  color: #f4c542;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 2rem;
+  color: #f4c542;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  blockquote {
+    font-size: 0.95rem;
+    padding: 1.25rem;
+  }
+}

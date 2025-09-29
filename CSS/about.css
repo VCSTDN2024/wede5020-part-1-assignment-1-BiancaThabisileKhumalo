@@ -1,0 +1,140 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px 10%;
+  position: relative;
+  padding-top: 80px; /* extra space for logo */
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* Logo positioning */
+.logo-container {
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  width: 120px;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4c542;
+}
+
+nav a:focus {
+  outline: 2px dashed #f4c542;
+  outline-offset: 4px;
+}
+
+/* Main Content */
+main {
+  padding: 40px 10%;
+  background: #fff;
+}
+
+main h2, main h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Responsive Images */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Mobile Menu Toggle (Prep) */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header, main {
+    padding: 20px 5%;
+  }
+
+  .logo-container {
+    top: 10px;
+    right: 5%;
+    width: 80px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: #f4c542;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,167 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem; /* Using relative unit (rem) */
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 10%; /* Relative spacing with rem */
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #f4c542;
+}
+
+/* Main content */
+main {
+  padding: 3rem 10%;
+  background: #fff;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  margin-bottom: 1.25rem;
+  color: #111;
+  font-size: 1.5rem;
+}
+
+article {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Video embeds */
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto; /* Responsive height */
+  aspect-ratio: 16 / 9; /* Keeps videos proportional */
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Featured video list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+ul li a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Images (Responsive) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* -----------------------
+   Responsive Breakpoints
+--------------------------*/
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    padding: 2rem 8%;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  header, main {
+    padding: 1.5rem 5%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
+}
