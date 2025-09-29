@@ -1,39 +1,32 @@
-<!DOCTYPE html> <!-- Declares the document as HTML5 -->
-<html lang="en"> <!-- Sets the language to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- Ensures proper character encoding -->
-  <title>Book a Service | Urban Auto Hub</title> <!-- Title shown in browser tab -->
-  <link href="CSS/booking.css" rel="stylesheet"> <!-- Placeholder for future CSS link -->
+  <meta charset="UTF-8">
+  <title>Book a Service | Urban Auto Hub</title>
+  <link href="CSS/booking.css" rel="stylesheet">
 </head>
 <body>
 
-  
   <!-- Header with page title and navigation menu -->
   <header>
-    <h1>Book Your Appointment</h1> <!-- Main heading for booking page -->
+    <h1>Book Your Appointment</h1>
 
-    <!-- Navigation bar linking to other site sections -->
     <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="ev-education.html">EV Education</a>
-      <a href="blog.html">Blog</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" target="_blank">Home 🔗</a> |
+      <a href="services.html" target="_blank">Services 🔗</a> |
+      <a href="ev-education.html" target="_blank">EV Education 🔗</a> |
+      <a href="blog.html" target="_blank">Blog 🔗</a> |
+      <a href="reviews.html" target="_blank">Reviews 🔗</a> |
+      <a href="contact.html" target="_blank">Contact 🔗</a>
     </nav>
   </header>
 
   <!-- Main content area -->
   <main>
-
-    <!-- Booking form for service appointments -->
     <form>
-
-      <!-- Input for type of service -->
       <label for="service">Service Type:</label>
       <input type="text" id="service" placeholder="e.g. Detailing">
 
-      <!-- Dropdown for selecting location -->
       <label for="location">Location:</label>
       <select id="location">
         <option>Sandton</option>
@@ -45,21 +38,17 @@
         <option>Durban</option>
       </select>
 
-      <!-- Date picker for appointment -->
       <label for="date">Date:</label>
       <input type="date" id="date">
 
-      <!-- Time picker for appointment -->
       <label for="time">Time:</label>
       <input type="time" id="time">
 
-      <!-- Submit button to confirm booking -->
       <button type="submit">Confirm Booking</button>
-
     </form>
   </main>
 
-  <!-- Footer with copyright -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Urban Auto Hub</p>
   </footer>

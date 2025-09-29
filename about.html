@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us | Urban Auto Hub</title>
-  <link href="CSS/about.css" rel="stylesheet"> <!-- Placeholder for future CSS link -->
+  <link href="CSS/about.css" rel="stylesheet">
+
   <style>
-    /* Basic styling for logo positioning */
     .logo-container {
       position: absolute;
       top: 10px;
@@ -16,40 +16,79 @@
     header {
       position: relative;
       padding-top: 60px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00BFFF;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #003366;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header section with site title and navigation menu -->
   <header>
-    <!-- Logo in top-right corner -->
     <div class="logo-container">
       <img src="https://cdn3.f-cdn.com/contestentries/2460233/77794148/66eab5030ba37_thumb900.jpg" alt="Urban Auto Hub Logo" style="width:100%; height:auto;">
     </div>
 
     <h1>About Urban Auto Hub</h1>
 
-    <!-- Navigation links to other pages -->
     <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="booking.html">Book Now</a>
-      <a href="ev-education.html">EV Education</a>
-      <a href="blog.html">Blog</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" target="_blank">Home 🔗</a> |
+      <a href="services.html" target="_blank">Services 🔗</a> |
+      <a href="booking.html" target="_blank">Book Now 🔗</a> |
+      <a href="ev-education.html" target="_blank">EV Education 🔗</a> |
+      <a href="blog.html" target="_blank">Blog 🔗</a> |
+      <a href="reviews.html" target="_blank">Reviews 🔗</a> |
+      <a href="contact.html" target="_blank">Contact 🔗</a>
     </nav>
   </header>
 
-  <!-- Main content area -->
   <main>
     <section>
       <h2>History of the Business</h2>
       <p>Founded in 2023 in Johannesburg by young automotive professionals, Urban Auto Hub offers tech-forward, urban-friendly vehicle services.</p>
       <p>We started with express maintenance in city centers and expanded into EV support, infotainment upgrades, and premium detailing.</p>
       <p>Our mission is to make car care convenient, affordable, and eco-conscious for urban drivers.</p>
-    
     </section>
 
     <section>
@@ -62,7 +101,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Urban Auto Hub</p>
   </footer>
