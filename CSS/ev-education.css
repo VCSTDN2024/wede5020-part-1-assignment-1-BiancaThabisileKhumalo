@@ -15,26 +15,29 @@ body {
 
 /* Header */
 header {
-  background-color: #00695c;
+  background-color: #000000;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
+
 
 header h1 {
   margin-bottom: 10px;
 }
 
 nav a {
-  color: #fff;
+  color: #007BFF; /* Bright blue */
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
 }
+
 
 /* Main content */
 main {

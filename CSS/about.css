@@ -14,12 +14,12 @@ body {
 
 /* Header */
 header {
-  background: #111;
-  color: #fff;
-  padding: 20px 10%;
-  position: relative;
-  padding-top: 80px; /* extra space for logo */
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
+
 
 header h1 {
   margin-bottom: 15px;
@@ -47,18 +47,18 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #007BFF; /* Electric Blue */
   margin: 0 12px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #f4c542;
+  color: #0056b3; /* Darker blue on hover */
 }
 
 nav a:focus {
-  outline: 2px dashed #f4c542;
+  outline: 2px dashed #007BFF;
   outline-offset: 4px;
 }
 

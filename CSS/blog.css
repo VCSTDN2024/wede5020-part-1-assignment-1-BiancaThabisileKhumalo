@@ -8,10 +8,10 @@ body {
 
 /* Header */
 header {
-  background-color: #1a1a1a;
+  background-color: #000000;
   color: white;
-  text-align: center;
   padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
@@ -20,15 +20,17 @@ header h1 {
 }
 
 nav a {
-  color: #fff;
+  color: #007BFF; /* Bright blue */
   text-decoration: none;
   margin: 0 8px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ff9800;
+  color: #0056b3; /* Darker blue on hover */
 }
+
 
 /* Main content */
 main {
