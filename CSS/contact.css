@@ -1,316 +1,160 @@
-/* Reset and base styles */
-* {
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   color: #333;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Container for centering */
-.header-container,
-.main-container,
-.footer-container {
-  max-width: 1200px;
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-container {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Header styles */
-header {
-  background: linear-gradient(to right, #1a1a1a, #2d2d2d);
-  color: white;
-  padding: 30px 0;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.logo-container {
-  margin-bottom: 20px;
-}
-
 .logo-container img {
-  width: 200px;
-  height: auto;
-  display: inline-block;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  background: linear-gradient(45deg, #4CAF50, #8BC34A);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 nav {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  padding: 8px 16px;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 8px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #4CAF50;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  color: #ff9800;
 }
 
-/* Main content styles */
-main {
-  flex: 1;
-  padding: 40px 0;
-  text-align: center;
-}
-
-section {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-h2 {
-  color: #1a1a1a;
-  margin-bottom: 25px;
-  font-size: 1.8rem;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(to right, #4CAF50, #8BC34A);
-  border-radius: 2px;
-}
-
-h3 {
-  color: #1a1a1a;
-  margin: 20px 0;
-  font-size: 1.4rem;
-}
-
-/* Form styles */
-form {
-  text-align: left;
-  max-width: 500px;
+/* Main Content */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 30px 20px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
+section {
+  flex: 1 1 450px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 label {
+  font-weight: bold;
+  margin-bottom: 5px;
   display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #444;
 }
 
 input, textarea {
   width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 5px;
-  border: 1px solid #ddd;
+  padding: 10px;
   border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
+  border-color: #ff9800;
   outline: none;
-  border-color: #4CAF50;
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 0 5px rgba(255,152,0,0.5);
 }
 
+/* Submit Button */
 button {
-  background: linear-gradient(to right, #4CAF50, #45a049);
+  background-color: #ff9800;
   color: white;
   border: none;
-  padding: 14px 30px;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  display: block;
-  margin: 25px auto 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to right, #45a049, #4CAF50);
+  background-color: #e68900;
 }
 
-/* Contact info styles */
-.contact-details {
-  text-align: left;
-  max-width: 500px;
-  margin: 0 auto 25px;
+/* Contact Info Section */
+.contact-details p {
+  margin: 8px 0;
 }
 
-p {
-  margin-bottom: 12px;
-  font-size: 1.05rem;
-}
-
-a {
-  color: #4CAF50;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #45a049;
-  text-decoration: underline;
-}
-
-/* Map styles */
-.map-container {
-  margin-top: 20px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-iframe {
+.map-container iframe {
   width: 100%;
-  max-width: 600px;
-  height: 350px;
-  border: 0;
-  display: block;
-  margin: 0 auto;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
 }
 
-/* Footer styles */
+/* Confirmation Message */
+.confirmation {
+  display: none;
+  margin-top: 20px;
+  background-color: #e7ffe7;
+  border: 1px solid #6cc76c;
+  color: #2b662b;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
 footer {
-  background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 25px 0;
-  margin-top: auto;
+  padding: 15px 0;
+  font-size: 0.9em;
 }
 
-footer p {
-  margin: 0;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .header-container,
-  .main-container,
-  .footer-container {
-    padding: 0 15px;
+  nav a {
+    display: inline-block;
+    margin: 4px 6px;
   }
-  
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  nav {
+
+  .main-container {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
-  
-  nav a {
-    width: 200px;
-    text-align: center;
-  }
-  
-  section {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 1.6rem;
-  }
-  
-  iframe {
-    height: 300px;
-  }
-}
 
-@media (max-width: 480px) {
-  header {
-    padding: 20px 0;
-  }
-  
-  .logo-container img {
-    width: 150px;
-  }
-  
-  header h1 {
-    font-size: 1.7rem;
-  }
-  
-  main {
-    padding: 20px 0;
-  }
-  
   section {
-    padding: 15px;
-  }
-  
-  h2 {
-    font-size: 1.4rem;
-  }
-  
-  input, textarea {
-    padding: 10px 12px;
-  }
-  
-  button {
-    padding: 12px 25px;
-  }
-  
-  iframe {
-    height: 250px;
+    width: 90%;
   }
 }

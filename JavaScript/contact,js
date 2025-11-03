@@ -1,0 +1,51 @@
+// contact.js
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  // Create a confirmation message container dynamically
+  const confirmation = document.createElement("div");
+  confirmation.classList.add("confirmation");
+  form.insertAdjacentElement("afterend", confirmation);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent form from refreshing page
+
+    // Get form values
+    const name = document.querySelector("#name").value.trim();
+    const email = document.querySelector("#email").value.trim();
+    const message = document.querySelector("#message").value.trim();
+
+    // Validate inputs
+    if (!name || !email || !message) {
+      alert("⚠️ Please fill in all fields before sending your message.");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("⚠️ Please enter a valid email address.");
+      return;
+    }
+
+    // Show success message
+    confirmation.innerHTML = `
+      <h3>✅ Message Sent Successfully!</h3>
+      <p>Thank you, <strong>${name}</strong>. We’ve received your message and will reply to <strong>${email}</strong> soon.</p>
+    `;
+    confirmation.style.display = "block";
+
+    // Reset the form
+    form.reset();
+
+    // Animate confirmation
+    confirmation.style.opacity = 0;
+    setTimeout(() => {
+      confirmation.style.transition = "opacity 1s ease";
+      confirmation.style.opacity = 1;
+    }, 100);
+  });
+
+  // Simple email validation function
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+});

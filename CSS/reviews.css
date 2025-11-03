@@ -1,138 +1,97 @@
-/* Reset & Base */
+/* Base reset and typography */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  background: #f9f9f9;
+  background-color: #fdfdfd;
   color: #333;
   line-height: 1.6;
-  font-size: 1rem;
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background: #111;
-  color: #fff;
+  background-color: #004d40;
+  color: white;
+  padding: 25px;
   text-align: center;
-  padding: 1.25rem 10%;
+  border-radius: 8px;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 nav a {
-  text-decoration: none;
   color: #fff;
-  margin: 0 0.8rem;
+  text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #f4c542;
+  text-decoration: underline;
 }
 
-/* Main */
+/* Main content */
 main {
-  padding: 2.5rem 10%;
-  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
 }
 
-main h2 {
-  margin-bottom: 2rem;
-  color: #0077cc;
-  font-size: 1.75rem;
+section h2 {
+  color: #00695c;
+  margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
-/* Reviews Layout */
-.reviews-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-/* Review Cards */
+/* Testimonials */
 blockquote {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  font-style: italic;
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f0f0f0;
+  border-left: 5px solid #00695c;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
 blockquote:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+  background-color: #e0f7fa;
 }
 
 blockquote p {
-  margin-bottom: 1rem;
+  font-style: italic;
   color: #444;
-}
-
-blockquote cite {
-  display: block;
-  font-weight: bold;
-  color: #0077cc;
-  font-style: normal;
-  margin-top: 0.5rem;
-}
-
-/* Quotation Marks Styling */
-blockquote::before {
-  content: "“";
-  font-size: 2rem;
-  color: #f4c542;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-}
-
-blockquote::after {
-  content: "”";
-  font-size: 2rem;
-  color: #f4c542;
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
 }
 
 /* Footer */
 footer {
-  background: #111;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 20px;
+  background-color: #eee;
   font-size: 0.9rem;
+  color: #666;
+  border-radius: 6px;
+  margin-top: 40px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   nav a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 5px 0;
   }
 
   header h1 {
-    font-size: 1.5rem;
-  }
-
-  main h2 {
-    font-size: 1.5rem;
-  }
-
-  blockquote {
-    font-size: 0.95rem;
-    padding: 1.25rem;
+    font-size: 1.8em;
   }
 }

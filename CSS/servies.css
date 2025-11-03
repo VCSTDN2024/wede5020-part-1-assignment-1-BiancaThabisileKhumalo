@@ -1,98 +1,98 @@
-/* Reset basic margins */
-body {
+/* Base reset and typography */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
   color: #333;
   line-height: 1.6;
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  position: relative;
+  background-color: #004d40;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-header .logo {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  height: 60px;
-}
-
-/* Navigation */
-nav {
-  margin-top: 10px;
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 nav a {
-  margin: 0 12px;
-  color: #ffcc00;
+  color: #fff;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
-/* Sections */
-main section {
-  background: #fff;
-  margin: 20px auto;
-  padding: 25px;
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
   border-radius: 10px;
-  max-width: 800px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
-main section h2 {
-  margin-bottom: 15px;
-  color: #222;
+section:hover {
+  transform: scale(1.02);
 }
 
-main section img {
+section h2 {
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-top: 10px;
+}
+
+/* Image styling */
+section img {
   width: 100%;
   height: auto;
-  margin-top: 15px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  background-color: #eee;
   font-size: 0.9rem;
+  color: #666;
+  border-radius: 6px;
   margin-top: 40px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
+@media (max-width: 600px) {
   nav a {
     display: block;
-    margin: 8px 0;
+    margin: 5px 0;
   }
 
-  header .logo {
-    position: static;
-    display: block;
-    margin: 10px auto 0;
+  header h1 {
+    font-size: 1.8em;
   }
 }

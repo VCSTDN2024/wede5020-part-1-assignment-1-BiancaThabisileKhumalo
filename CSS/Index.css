@@ -1,181 +1,101 @@
-/* Reset & Base Styles */
+/* Base reset and typography */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  font-size: 1rem; /* relative base font */
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background: #111;
-  color: #fff;
+  background-color: #004d40;
+  color: white;
+  padding: 25px;
   text-align: center;
-  padding: 1.25rem 10%;
+  border-radius: 8px;
 }
 
 header h1 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-/* Navigation */
-nav {
-  margin-top: 0.75rem;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 nav a {
-  text-decoration: none;
   color: #fff;
-  margin: 0 0.75rem;
+  text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #f4c542;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 2.5rem 10%;
-  background: #fff;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 0.6rem;
-}
-
-.hero p {
-  margin-bottom: 1.25rem;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.hero img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  display: block;
-  margin: 0 auto;
-}
-
-/* Sections */
-main section {
-  padding: 2rem 10%;
-  background: #fff;
-  margin: 1.25rem auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-main h3 {
-  margin-bottom: 0.9rem;
-  color: #111;
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style: square inside;
-  padding-left: 1rem;
-}
-
-p a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-p a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Images */
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2, section h3 {
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+section p, section ul {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Image styling */
 img {
+  border-radius: 10px;
   max-width: 100%;
   height: auto;
-  display: block;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-  background: #111;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  padding: 15px;
+  background-color: #eee;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-radius: 6px;
 }
 
-/* -----------------------
-   Responsive Breakpoints
---------------------------*/
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-  header h1 {
-    font-size: 1.75rem;
-  }
-
-  .hero h2 {
-    font-size: 1.75rem;
-  }
-
-  main section {
-    padding: 1.5rem 8%;
-  }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  header, main {
-    padding: 1.25rem 5%;
-  }
-
+/* Responsive */
+@media (max-width: 600px) {
   nav a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 5px 0;
   }
 
   header h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.25rem;
-  }
-
-  .hero h2 {
-    font-size: 1.25rem;
-  }
-
-  main h3 {
-    font-size: 1.25rem;
-  }
-
-  footer {
-    font-size: 0.8rem;
+    font-size: 2em;
   }
 }
